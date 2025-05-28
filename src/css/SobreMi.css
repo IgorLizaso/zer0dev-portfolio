@@ -1,0 +1,20 @@
+.section {
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  padding: 1.5rem 1rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #005a9e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-bottom: 3px solid #007acc;
+  padding-bottom: 0.3rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.5;
+}

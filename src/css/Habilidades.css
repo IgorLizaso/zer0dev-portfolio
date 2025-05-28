@@ -1,0 +1,6 @@
+.section ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+  color: #555;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(0, 100, 255, 0.25), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(255, 0, 50, 0.2), transparent 50%);
+  color: #ddd;
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #4aa8ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff4a67;
+  text-decoration: underline;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* Para que el scroll no tape el header */
+main {
+  padding-top: 3.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}

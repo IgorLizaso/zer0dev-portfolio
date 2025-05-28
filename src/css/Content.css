@@ -1,0 +1,291 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Bloques visuales */
+.block {
+  padding: 3rem 4rem;
+  border-radius: 16px;
+  color: #f0f0f0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: left; /* Cambiado de center a left */
+  position: relative;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+}
+
+.block h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+  margin-left: 0; /* sin margen para que quede a la izquierda */
+}
+
+.block p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-left: 2.5rem; /* texto desplazado a la derecha respecto al título */
+  text-align: left;
+}
+
+/* Fondos y bordes para colores suaves */
+.block-blue {
+  background: linear-gradient(135deg, rgba(0, 98, 255, 0.15), rgba(0, 157, 255, 0.1));
+  border-left: 5px solid #007bff;
+}
+
+.block-purple {
+  background: linear-gradient(135deg, rgba(128, 0, 128, 0.15), rgba(186, 85, 211, 0.1));
+  border-left: 5px solid #b266ff;
+}
+
+.block-teal {
+  background: linear-gradient(135deg, rgba(0, 128, 128, 0.15), rgba(0, 206, 209, 0.1));
+  border-left: 5px solid #00bfa5;
+}
+
+.block-red {
+  background: linear-gradient(135deg, rgba(255, 69, 58, 0.15), rgba(255, 140, 0, 0.1));
+  border-left: 5px solid #ff4d4f;
+}
+
+.block-gray {
+  background: linear-gradient(135deg, rgba(100, 100, 100, 0.15), rgba(80, 80, 80, 0.1));
+  border-left: 5px solid #888;
+}
+
+@media screen and (max-width: 768px) {
+  .block {
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .block h2 {
+    text-align: left;
+  }
+
+  .block p {
+    margin-left: 1rem;
+  }
+}
+
+/* === Carrusel específico, no altera el resto de bloques === */
+
+.carrusel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel-slide {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carrusel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.arrow {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  user-select: none;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.arrow.left {
+  margin-right: 0.5rem;
+}
+
+.arrow.right {
+  margin-left: 0.5rem;
+}
+
+.carrusel-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .carrusel-container {
+    max-width: 100%;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+.soporte-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 500px;
+}
+
+.soporte-form label {
+  font-weight: 600;
+  color: #ddd;
+}
+
+.soporte-form input,
+.soporte-form textarea {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+}
+
+.soporte-form input:focus,
+.soporte-form textarea:focus {
+  box-shadow: 0 0 8px #00bfa5;
+  border: 1px solid #00bfa5;
+}
+
+.soporte-form button {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: #00bfa5;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.soporte-form button:hover {
+  background-color: #008f87;
+}
+
+.github-slide {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.github-slide h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.github-slide p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.github-slide a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #00bfa5;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.github-slide a:hover {
+  background-color: #008f87;
+}
+
+.carrusel-thumbnails button.thumbnail {
+  background: transparent;
+  border: 1px solid #ccc;
+  margin: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+}
+
+.carrusel-thumbnails .active {
+  background-color: #00e5ff;
+  color: black;
+  font-weight: bold;
+}
+
+.destacado {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ff4757;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-select {
+  padding: 10px;
+  border: 2px solid #ced6e0;
+  border-radius: 8px;
+  background-color: #f1f2f6;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-select:focus {
+  border-color: #1e90ff;
+  outline: none;
+}
