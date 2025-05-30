@@ -12,12 +12,14 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Esto separa nav-list y el botón */
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 2rem;
   margin: 0;
   padding: 0;
@@ -35,5 +37,22 @@
 .nav-list li a:hover,
 .nav-list li a:focus {
   background-color: rgba(255, 74, 103, 0.3);
+  outline: none;
+}
+
+.panel-button {
+  background-color: #003366; /* Azul oscuro */
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.panel-button:hover,
+.panel-button:focus {
+  background-color: #002244; /* Azul más oscuro en hover */
   outline: none;
 }

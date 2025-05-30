@@ -1,0 +1,130 @@
+.ticketsContainer {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.backButton {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover,
+.backButton:focus {
+  background-color: #1e2a38;
+  outline: none;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.ticketsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ticketItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.25rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(37, 117, 252, 0.3);
+  gap: 1rem;
+  word-break: break-word;
+  min-height: 80px;
+}
+
+.ticketInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+  max-width: 85%;
+}
+
+.ticketText {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badgeGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.estadoBadge {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  max-width: fit-content;
+}
+
+.estadoAbierto {
+  background-color: #27ae60;
+  color: white;
+}
+
+.estadoCerrado {
+  background-color: #c0392b;
+  color: white;
+}
+
+.estadoEnproceso {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.tipoBadge {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.verButton {
+  background-color: white;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.verButton:hover {
+  background-color: #f0f0f0;
+}

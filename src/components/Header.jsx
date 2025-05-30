@@ -13,6 +13,7 @@ function Header() {
           <li><a href="#crear-pedido">Crear Pedido</a></li>
           <li><a href="#soporte">Soporte</a></li>
         </ul>
+        <a href="/panel/login" className="panel-button">Panel</a>
       </nav>
     </header>
   );

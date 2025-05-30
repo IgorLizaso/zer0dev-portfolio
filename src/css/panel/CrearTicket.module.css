@@ -1,0 +1,83 @@
+.container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #141e30, #243b55);
+  border-radius: 16px;
+  color: #e0f7fa;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #cfd8dc;
+}
+
+.select,
+.input,
+.textarea {
+  margin-top: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #3a4a69;
+  background: #1e2a45;
+  color: #e0f7fa;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.select:focus,
+.input:focus,
+.textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.button,
+.cancelButton {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #0097a7;
+}
+
+.cancelButton {
+  background-color: #37474f;
+  margin-top: 0.5rem;
+}
+
+.cancelButton:hover {
+  background-color: #263238;
+}
