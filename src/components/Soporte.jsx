@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Soporte.css';
+import '../css/main/Soporte.css';
 
 function Soporte() {
   return (

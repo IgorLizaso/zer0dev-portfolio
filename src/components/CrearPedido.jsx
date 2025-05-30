@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/CrearPedido.css';
+import '../css/main/CrearPedido.css';
 
 function CrearPedido() {
   return (

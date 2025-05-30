@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/CustomOrders.css';
+import '../css/main/CustomOrders.css';
 
 function CustomOrders() {
   return (

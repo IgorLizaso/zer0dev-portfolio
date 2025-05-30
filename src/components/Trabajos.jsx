@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Trabajos.css';
+import '../css/main/Trabajos.css';
 
 function Trabajos() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/SobreMi.css';
+import '../css/main/SobreMi.css';
 
 function SobreMi() {
   return (

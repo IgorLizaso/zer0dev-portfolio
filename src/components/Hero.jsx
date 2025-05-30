@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaDiscord, FaGithub } from 'react-icons/fa';
-import '../css/Hero.css';
+import '../css/main/Hero.css';
 import myPhoto from '../assets/imagen.jpg'; // Pon tu foto aquí
 
 function Hero() {
